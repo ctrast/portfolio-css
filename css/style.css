@@ -1,5 +1,5 @@
 body{
-    background-image: src;
+   
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -39,6 +39,9 @@ header, footer {
   }
   
   section {
+    background-image:url("/images/minneapolis.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background: #ffffff;
     color: #000000;
     border-radius: 5px;
@@ -49,9 +52,13 @@ header, footer {
     line-height: 100px;
     flex-grow: 1;
   }
-  div{
+  #gameAreaDiv{
     background-color: cadetblue;
     width: auto;
+  }
+  #gameAreaP{
+    font-size: 20px;
+    color: black;
   }
   
   @media screen and (max-width: 600px) {
