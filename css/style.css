@@ -1,0 +1,10 @@
+body{
+    background-image: src;
+}
+
+h1{
+    background-image: url("/images/ows_158465311877788.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
