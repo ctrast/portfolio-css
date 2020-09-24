@@ -1,73 +1,94 @@
-body{
-   
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-between;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+header,
+footer {
+  background-image: url("/images/minneapolis.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 30px;
+  color: black;
+  text-align: center;
+  line-height: 30px;
+  font-size: 30px;
+}
+a {
+  margin: 10px;
+}
 
-header, footer {
-    background-image: url("/images/minneapolis.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 30px;
-    color: black;
-    text-align: center;
-    line-height: 30px;
-    font-size: 30px;
-  }
-  
+main {
+  background: black;
+  display: flex;
 
+  flex-grow: 1;
+}
+
+nav,
+aside {
+  background: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  flex-basis: auto;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
+}
+
+section {
+  color: white;
+  border-radius: 5px;
+  flex-basis: 100px;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
+  flex-grow: 1;
+}
+
+#gameAreaDiv {
+  background-color: cadetblue;
+  width: auto;
+  height: auto;
+}
+#gameAreaP {
+  font-size: 20px;
+  color: black;
+}
+
+button {
+  border-radius: 10px;
+  color: black;
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  background-repeat: no-repeat;
+  background-size: 80px;
+}
+.rock {
+  background-image: url("/images/rock.jpg");
+}
+
+.paper {
+  background-image: url("/images/paper.jpg");
+}
+
+.scissors {
+  background-image: url("/images/scissors.jpg");
+}
+
+@media screen and (max-width: 600px) {
   main {
-    background: black;
-    display: flex;
-    justify-content: space-around;
-    flex-grow: 1;
+    flex-direction: column;
   }
-  
-  nav, aside {
-    background: #ffffff;
-    color: #000000;
-    border-radius: 5px;
-    flex-basis: auto;
-    margin: 5px;
-    text-align: center;
-    line-height: 100px;
-  }
-  
+
   section {
-    background-image:url("/images/minneapolis.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: #ffffff;
-    color: #000000;
-    border-radius: 5px;
-    flex-basis: 100px;
-    margin: 5px;
-  
-    text-align: center;
-    line-height: 100px;
-    flex-grow: 1;
+    order: -1;
   }
-  #gameAreaDiv{
-    background-color: cadetblue;
-    width: auto;
-  }
-  #gameAreaP{
-    font-size: 20px;
-    color: black;
-  }
-  
-  @media screen and (max-width: 600px) {
-    main {
-      flex-direction: column;
-    }
-  
-    section {
-      order: -1;
-    }
-  }
-  
+}

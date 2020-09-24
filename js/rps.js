@@ -1,21 +1,18 @@
-$(document).ready(function(event){
- 
-    $("#navContent").load("nav.html"); 
-    console.log("I am here in the JS FILE");
- 
- 
+$(document).ready(function (event) {
+  $("#navContent").load("nav.html");
+  console.log("I am here in the JS FILE");
 
-let player = {
-    choice: null
+  let player = {
+    choice: null,
   };
-  
+
   let computer = {
-    choice: null
+    choice: null,
   };
   let msg = "";
-  
+
   const options = ["rock", "paper", "scissors"];
-  
+
   const computerChooses = () => {
     let randomChoiceNum = getRandomNumber();
     computer.choice = options[randomChoiceNum];
@@ -25,7 +22,7 @@ let player = {
     player.choice = options[number];
     console.log("Player choice is " + player.choice);
   };
-  
+
   const getRandomNumber = () => {
     return Math.floor(Math.random() * options.length);
   };
@@ -73,39 +70,37 @@ let player = {
     const newh1 = document.createElement("h1");
     newh1.textContent = results;
     newh1.setAttribute("id", "output");
-    const divGame = document.querySelector('#gameAreaDiv');
+    const divGame = document.querySelector("#gameAreaDiv");
     divGame.appendChild(newh1);
   };
   const clearResults = () => {
-    const h1 = document.querySelector('h1');
-    if(h1 !== null){
-     document.getElementById("output").remove();
-      console.log("h1 is "+h1);  
+    const h1 = document.querySelector("h1");
+    if (h1 !== null) {
+      document.getElementById("output").remove();
+      console.log("h1 is " + h1);
     }
-    
   };
-  
+
   //getbutton click
-  document.getElementById('0').onclick = function(e) {
+  document.getElementById("0").onclick = function (e) {
     playGame(e.target.id);
-   console.log("the id is "+e.target.id);
-  }
-  document.getElementById('1').onclick = function(e) {
+    console.log("the id is " + e.target.id);
+  };
+  document.getElementById("1").onclick = function (e) {
     playGame(e.target.id);
-   console.log("the id is "+e.target.id);
-  }
-  document.getElementById('2').onclick = function(e) {
+    console.log("the id is " + e.target.id);
+  };
+  document.getElementById("2").onclick = function (e) {
     playGame(e.target.id);
-   console.log("the id is "+e.target.id);
-  }
-  
+    console.log("the id is " + e.target.id);
+  };
+
   const playGame = (playerChoice) => {
     playerChooses(playerChoice);
-    console.log("the player button choice is "+playerChoice);
+    console.log("the player button choice is " + playerChoice);
     computerChooses();
     const results = compareChoices(player.choice, computer.choice);
     displayResults(results);
     console.log(results);
-    
-  }
+  };
 });
