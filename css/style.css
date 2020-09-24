@@ -18,6 +18,7 @@ footer {
   line-height: 30px;
   font-size: 30px;
   margin-top: 30px;
+  font-weight: bold;
 }
 a {
   margin: 10px;
@@ -37,12 +38,14 @@ aside {
   margin: 5px;
   text-align: center;
   line-height: 100px;
+  border-radius: 25px;
 }
 aside{
   background-image: url(../images/me.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 300px;
+  width: 200px;
+  
 }
 
 section {
@@ -52,6 +55,8 @@ section {
   text-align: center;
   line-height: 100px;
   flex-grow: 1;
+  background-color: white; 
+  border-radius: 25px;
 }
 section p{
   color: black;
@@ -62,6 +67,11 @@ section p{
   flex-grow: 1;
   border-radius: 10px;
   
+}
+section div img{
+  margin: 30px;
+height: 150px;
+
 }
 #gameAreaDiv {
   background-color: cadetblue;
