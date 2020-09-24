@@ -71,7 +71,7 @@ section p{
 section div img{
   margin: 30px;
 height: 150px;
-
+width: auto;
 }
 #gameAreaDiv {
   background-color: cadetblue;
