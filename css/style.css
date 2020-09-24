@@ -1,5 +1,5 @@
 body {
-  background-image: url("./images/minneapolis.jpeg");
+  background-image: url("/images/minneapolis.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
