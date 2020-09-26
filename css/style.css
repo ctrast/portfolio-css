@@ -123,6 +123,21 @@ button {
 .scissors {
   background-image: url("../images/scissors.jpg");
 }
+.grid-container {
+  display: grid;
+ 
+}
+.grid-item1 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  
+}
+.grid-item2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
 
 @media screen and (max-width: 600px) {
   main {
