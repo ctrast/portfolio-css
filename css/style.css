@@ -35,46 +35,41 @@ aside {
   flex-basis: auto;
   margin: 5px;
   text-align: left;
-  line-height: 100px;
+  line-height: 50px;
   border-radius: 25px;
 }
 nav {
-  size: 200px;
+  size: 300px;
   opacity: 0.5;
- 
 }
-a{
+a {
   color: black;
   font-size: 19px;
-  
 }
-a:hover{
- background-color: white;
+a:hover {
+  background-color: white;
 }
 nav:hover {
   opacity: 1;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: medium;
- 
 }
 aside {
   background-image: url(../images/me.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 200px;
+  width: 300px;
 }
 
 section {
   color: black;
-  flex-basis: 100px;
   margin: 5px;
   text-align: center;
   line-height: 100px;
-  flex-grow: 1;
-  
+  flex-grow: inherit;
   border-radius: 25px;
 }
-section p {
+#gameAreaDiv p {
   color: black;
   flex-basis: 100px;
   margin: 5px;
@@ -83,18 +78,26 @@ section p {
   flex-grow: 1;
   border-radius: 10px;
   font-size: 20px;
+  padding: 20px;
+
+  width: 600px;
 }
 section div img {
   margin: 30px;
-  height: 150px;
+  height: 275px;
+  background-image: url("./images/tools.png");
 }
 #gameAreaDiv {
-  background-color:white;
+  background-color: white;
   width: auto;
-  height: 200px;
+  height: 420px;
+  border-radius: 25px;
+  opacity: 0.9;
+  text-align: center;
 }
 #gameAreaP {
-  font-size: 20px;
+  padding: 25px;
+  font-size: 30px;
   color: black;
 }
 

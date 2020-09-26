@@ -70,6 +70,7 @@ $(document).ready(function (event) {
     const newh1 = document.createElement("h1");
     newh1.textContent = results;
     newh1.setAttribute("id", "output");
+
     const divGame = document.querySelector("#gameAreaDiv");
     divGame.appendChild(newh1);
   };

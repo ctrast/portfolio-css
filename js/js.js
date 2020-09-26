@@ -1,9 +1,12 @@
 $(document).ready(function (event) {
-  // alert("Thanks for Visting!");
-  LoadNav();
+  $("#navContent").load("nav.html");
+
+  $("a").on("click", function () {
+    console.log("a click happened");
+  });
 });
 
-const LoadNav = () => {
-  $("#navContent").load("nav.html");
-  console.log("I am here in the JS FILE");
-};
+// const loadNav = () => {
+//   $("#navContent").load("nav.html");
+//   console.log("I am here in the JS FILE");
+// };
