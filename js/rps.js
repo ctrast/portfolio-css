@@ -1,5 +1,5 @@
 $(document).ready(function (event) {
-  $("#navContent").load("nav.html");
+  //$("#navContent").load("nav.html");
   console.log("I am here in the JS FILE");
 
   let player = {

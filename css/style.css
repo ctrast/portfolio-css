@@ -1,4 +1,4 @@
-body {
+/* body {
   background-image: url(../images/minneapolis.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,11 +43,13 @@ nav {
   opacity: 0.5;
 }
 a {
-  color: black;
+  color: white;
   font-size: 19px;
+  
 }
 a:hover {
-  background-color: white;
+  background-color: black;
+  transition: ease;
 }
 nav:hover {
   opacity: 1;
@@ -143,8 +145,10 @@ button {
   main {
     flex-direction: column;
   }
-
+nav{
+  order: 1;
+}
   section {
     order: -1;
   }
-}
+} */
