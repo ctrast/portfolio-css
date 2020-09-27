@@ -89,18 +89,20 @@ header b {
   font-size: 20px;
 }
 
-.active {
-  background-color: #4caf50;
-  color: white;
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
   main {
     flex-direction: column;
   }
-  nav {
-    order: 1;
+  header{
+      order: -1;
   }
-  section {
+ nav{
+     display: none;
+ }
+ #navLinks {
+    background-color: white;
+  }
+  article {
     order: -1;
   }
 }
