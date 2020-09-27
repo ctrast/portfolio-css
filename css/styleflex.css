@@ -68,9 +68,9 @@ header a.icon {
   font-size: 30px;
   display: block;
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: 0px;
-  /* align-items: baseline; */
+ 
 }
 
 #navLinks a:hover {
