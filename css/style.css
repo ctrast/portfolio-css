@@ -48,6 +48,14 @@ ul.topnav li a:hover {
 ul.topnav li.dropdownmenu {
   display: none;
 }
+div.imgnav{
+  display: flex;
+  align-items: center;
+}
+div.title{
+  background-color: #03045E;
+  color: #fff;
+}
 
 /*  ##### MOBILE ####### */
 @media screen and (max-width: 680px) {

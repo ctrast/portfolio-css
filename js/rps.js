@@ -1,5 +1,5 @@
 $(document).ready(function (event) {
-  //$("#navContent").load("nav.html");
+ 
   console.log("I am here in the JS FILE");
 
   let player = {
@@ -43,7 +43,7 @@ $(document).ready(function (event) {
         } else {
           msg = "Computer wins; " + computerChoice + " beats " + playerChoice;
         }
-      } cd 
+      } 
       } else if (computerChoice === options[2]) {
         //Test for scissors - rock is only winner
         if (playerChoice === options[0]) {
@@ -52,7 +52,7 @@ $(document).ready(function (event) {
           msg = "Computer wins; " + computerChoice + " beats " + playerChoice;
         }
       }
-    } else if (playerChoice === null) {
+     else if (playerChoice === null) {
       msg = "Player choice is null";
     }
     playerChoice = null;
