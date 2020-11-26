@@ -1,16 +1,15 @@
 $(document).ready(function (event) {
-  // $("#navContent").load("nav.html");
-
-  $("a").on("click", function () {
-    console.log("a click happened");
+  $("li").on("click", function () {
+    menuBars();
   });
 });
 
 function menuBars() {
-  var x = document.getElementById("navLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
+  var x = document.getElementById("menu");
+  console.log("Hello", x.className)
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else{
+    x.className = "topnav"
   }
 }

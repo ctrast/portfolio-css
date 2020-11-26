@@ -4,42 +4,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cory's New Portfolio</title>
-  <link rel="stylesheet" href="./css/styleflex.css" />
+  <title>Cory Trast's Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css" />
 
 </head>
 
 <body>
-  <nav class="col-1" >
+  <nav>
     <img class="meImage" src="./images/me.jpg" alt="Cory Trast">
+    <ul class="topnav" id="menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./secRPS.html">Rock Paper Scissor</a></li>
+      <li><a href="./ascii.html">ASCII Art</a></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/corytrast">linkedin</a></li>
+      <li><a href="#About">About</a></li>
+      <li class="topnav-right"><a href="#SignUp">Sign Up</a></li>
+      <li class="topnav-right"><a href="#Sign In">Sign In</a></li>
+      <!-- Javascript void = stay on page no link -->
+      <li class="dropdownmenu"><a href="javascript:void(0);" >&#9776;</a></li> 
+
+    </ul>
   </nav>
-  <div class="col-2">
-  	<header>
-     
-      <h2>Cory Trast's Portfolio</h2>
+  <div>
+    <header>
+
+      <h2>Cory Trast's Portfolio - CSS VERSION</h2>
       <b>My software development journey...</b><br>
       Java • JavaScript • HTML • Jenkins • Maven • Rest Assured • CSS
-      
-      <a href="./index.html">Home Page</a>
-      <div id="navLinks">
-        <a href="./secRPS.html">Play Rock Paper Scissor</a>
-        <a href="./ascii.html">ASCII Art</a>
-        <a target="_blank" href="https://www.linkedin.com/in/corytrast"
-          >View my linkedin Profile</a>
-      </div>
-      <!-- Stay on the same page with a click void(0) -->
-      <a href="javascript:void(0);" class="icon" onclick="menuBars()">
-        &#9776; menu
-        </a>
-      </a>
     </header>
-    <main class="content">
-    <article>Article</article>
-    <aside>
-      
-    </aside>
+    <main>
+
+      <aside>
+
+      </aside>
     </main>
-  	<footer>Footer</footer>
+    <footer>Footer</footer>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
